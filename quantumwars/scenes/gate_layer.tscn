@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://bnbb5y8h6h7yq"]
+
+[ext_resource type="Script" uid="uid://crdp1llggofsy" path="res://scenes/gate_layer.gd" id="1_kg7sj"]
+[ext_resource type="PackedScene" uid="uid://2gqa4bmptnmn" path="res://scenes/drop_spot.tscn" id="2_btw5v"]
+
+[node name="GateLayer" type="Node2D"]
+script = ExtResource("1_kg7sj")
+
+[node name="DropSpot1" parent="." instance=ExtResource("2_btw5v")]
+
+[node name="DropSpot2" parent="." instance=ExtResource("2_btw5v")]
+offset_left = 52.0
+offset_right = 92.0
+
+[node name="DropSpot3" parent="." instance=ExtResource("2_btw5v")]
+offset_left = 107.0
+offset_right = 147.0
+
+[node name="DropSpot4" parent="." instance=ExtResource("2_btw5v")]
+offset_left = 162.0
+offset_right = 202.0
+
+[node name="DropSpot5" parent="." instance=ExtResource("2_btw5v")]
+offset_left = 217.0
+offset_right = 257.0

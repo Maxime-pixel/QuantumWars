@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://clpq15xgq6heb"]
+
+[ext_resource type="PackedScene" uid="uid://bnbb5y8h6h7yq" path="res://scenes/gate_layer.tscn" id="1_bw3vb"]
+
+[node name="Board" type="Node2D"]
+
+[node name="GateLayer" parent="." instance=ExtResource("1_bw3vb")]
+position = Vector2(-129, -20)

@@ -11,5 +11,6 @@ config_version=5
 [application]
 
 config/name="QuantumWars"
+run/main_scene="uid://c1qq4qmwby47s"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"

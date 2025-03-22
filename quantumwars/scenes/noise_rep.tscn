@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://b4tv1348mniuo"]
+
+[ext_resource type="Script" uid="uid://b7ruocavrslb3" path="res://scenes/noise_rep.gd" id="1_57qfk"]
+[ext_resource type="Texture2D" uid="uid://5sxt6b1ecj78" path="res://assets/noise_representation/X_representation.png" id="2_57qfk"]
+[ext_resource type="Texture2D" uid="uid://cycxk87kxu5qh" path="res://assets/noise_representation/z_representation.png" id="3_1bi6k"]
+[ext_resource type="Texture2D" uid="uid://cm02wyhfy66kb" path="res://assets/noise_representation/ZX.png" id="4_81m2h"]
+
+[node name="NoiseRep" type="Node2D"]
+script = ExtResource("1_57qfk")
+
+[node name="X_rep" type="Sprite2D" parent="."]
+position = Vector2(-1.27664, -1.22501)
+scale = Vector2(0.0987557, 0.0987557)
+texture = ExtResource("2_57qfk")
+
+[node name="Z_rep" type="Sprite2D" parent="."]
+position = Vector2(-4.29887, -4.12499)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("3_1bi6k")
+
+[node name="ZX_rep" type="Sprite2D" parent="."]
+position = Vector2(-3.61287, -2.625)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("4_81m2h")

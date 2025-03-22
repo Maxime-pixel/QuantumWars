@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://c1qq4qmwby47s"]
+
+[ext_resource type="PackedScene" uid="uid://344y08dcr1rn" path="res://scenes/goby.tscn" id="1_uwrxv"]
+[ext_resource type="PackedScene" uid="uid://clpq15xgq6heb" path="res://scenes/board.tscn" id="2_yqjtg"]
+
+[node name="Game" type="Node2D"]
+position = Vector2(0, 486)
+
+[node name="Goby" parent="." instance=ExtResource("1_uwrxv")]
+position = Vector2(0, 261)
+scale = Vector2(0.5, 0.5)
+
+[node name="Goby2" parent="." instance=ExtResource("1_uwrxv")]
+position = Vector2(0, -255)
+scale = Vector2(0.5, 0.5)
+direction = -1
+x_initial_state = [1, 0, 0, 0, 0]
+z_initial_state = [1, 0, 0, 0, 0]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Board" parent="." instance=ExtResource("2_yqjtg")]

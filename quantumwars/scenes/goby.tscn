@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://344y08dcr1rn"]
+
+[ext_resource type="Script" uid="uid://d02cns6o8223f" path="res://scenes/goby.gd" id="1_jj6bh"]
+[ext_resource type="PackedScene" uid="uid://b4tv1348mniuo" path="res://scenes/noise_rep.tscn" id="2_rr1jl"]
+
+[node name="Goby" type="Node2D"]
+script = ExtResource("1_jj6bh")
+
+[node name="NoiseRep1" parent="." instance=ExtResource("2_rr1jl")]
+position = Vector2(-432, 0)
+
+[node name="NoiseRep2" parent="." instance=ExtResource("2_rr1jl")]
+position = Vector2(-216, 0)
+
+[node name="NoiseRep3" parent="." instance=ExtResource("2_rr1jl")]
+
+[node name="NoiseRep4" parent="." instance=ExtResource("2_rr1jl")]
+position = Vector2(216, 0)
+
+[node name="NoiseRep5" parent="." instance=ExtResource("2_rr1jl")]
+position = Vector2(416, 0)
